@@ -1,513 +1,156 @@
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-<!--    <meta charset="UTF-8">-->
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-<!--    <title>Fatemeh Tabatabaei</title>-->
-<!--    <link rel="stylesheet" href="styles.css">-->
-<!--</head>-->
-<!--<body>-->
-<!--    <header>-->
-<!--        <h1>Welcome to My Website</h1>-->
-<!--    </header>-->
-<!--    <main>-->
-<!--        <p>Hello! I'm Fatemeh Tabatabaei. This is my personal website.</p>-->
-<!--    </main>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatemeh Tabatabaei</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- Removed the h1 tag to eliminate "Welcome to My Website" text -->
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+<!--                <li><a href="#contact">Contact</a></li>-->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <h2>Fatemeh Tabatabaei</h2>
+            <div class="about-container">
+                <div class="about-text">
+                    <p>
+                        I am an AI engineer with 3 years of professional experience, currently working as a machine learning engineer at
+                        <a href="https://www.ferrumcapital.az/en" target="_blank">Ferrum Capital</a>.
+                        <br>
+                        I completed my Master's degree in the Statistical Machine Learning Lab at the
+                        <a href="https://ce.aut.ac.ir/index.php?sid=4&slc_lang=en" target="_blank">Department of Computer Engineering</a>,
+                        <a href="https://www.aut.ac.ir/" target="_blank">Amirkabir University of Technology</a>, Tehran, Iran, in 2021.
+                        I received my B.Sc. degree from the
+                        <a href="https://en.kntu.ac.ir/faculties/computer-engineering/" target="_blank">Department of Computer Engineering</a>,
+                        <a href="https://kntu.ac.ir/" target="_blank">K. N. Toosi University of Technology</a>, Tehran, Iran, in 2018.
+                        </p>
+
+                    <p style="text-align:center">
+                        <a href="mailto:tabatabaeifateme@gmail.com" target="_blank">Email</a> &nbsp;/&nbsp;
+                        <a href="data/resume_OCT_2024.pdf" target="_blank">CV</a> &nbsp;/&nbsp;
+                        <a href="https://scholar.google.com/citations?user=1dVVIxQAAAAJ&hl=en" target="_blank">Google Scholar</a> &nbsp;/&nbsp;
+                        <a href="https://www.linkedin.com/in/fatemeh-tabatabaeii" target="_blank">LinkedIn</a>
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="images/profile.jpg" alt="Fatemeh Tabatabaei" class="profile-pic">
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Section -->
+        <section id="research">
+            <h2>Research</h2>
+            <p>
+                I am interested in computer vision and the understanding of images and videos.
+                I have applied graph neural networks for group activity recognition and recently focused on dynamic network representation learning.
+                I am also interested in the applications of AI in medical health.
+            </p>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications">
+            <h2>Publications</h2>
+            <ul style="list-style-type: none; padding: 0; font-size: 15px;"> <!-- Removes bullets and sets smaller font -->
+                <!-- First Publication -->
+                <li style="display: flex; align-items: center; margin-bottom: 20px;"> <!-- Flexbox layout -->
+                    <div style="margin-right: 20px;">
+                        <a href="https://arxiv.org/pdf/2408.12753" target="_blank">
+                            <img src="images/tenence.png" width="300" alt="Publication 1 Image"> <!-- Replace with actual image path -->
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://arxiv.org/pdf/2408.12753" target="_blank">
+                            <strong>Contrastive Representation Learning for Dynamic Link Prediction in Temporal Networks</strong>
+                        </a>
+                        <br>
+                        <p class="paper-explanation">
+                        Amirhossein Nouranizadeh, <strong>Fatemeh Tabatabaei Far</strong>, Mohammad Rahmati
+                        <br>
+                        <em>arXiv</em>, 2024
+                        <br>
+                        <a href="https://arxiv.org/pdf/2408.12753" target="_blank">arXiv</a>
+                        <br><br>
+<!--                        In this paper, we introduce 𝘵𝘦𝘯𝘦𝘕𝘊𝘌, a novel self-supervised method for learning representations of temporal networks using a recurrent message-passing neural network architecture. Our approach is designed to tackle the dynamic link prediction task more effectively.-->
+<!--                            A key feature of our method is implementing 𝘐𝘯𝘧𝘰𝘕𝘊𝘌 in the context of contrastive predictive coding for dynamic graphs, which operates at both local and global scales of temporal networks.-->
+                        Temporal networks are a crucial concept in many technical fields, and predicting links in these networks requires learning effective representations.
+                            We introduced 𝘵𝘦𝘯𝘦𝘕𝘊𝘌, a novel self-supervised method for learning representations of temporal networks using a recurrent message-passing neural network architecture.
+                            A key feature of our method is implementing 𝘐𝘯𝘧𝘰𝘕𝘊𝘌 in the context of contrastive predictive coding for dynamic graphs.
+                    </div>
+                </li>
+
+                <br> <!-- Add spacing between publications -->
+
+                <!-- Second Publication -->
+                <li style="display: flex; align-items: center; margin-bottom: 20px;"> <!-- Flexbox layout -->
+                    <div style="margin-right: 20px;">
+                        <a href="https://arxiv.org/pdf/2003.12346" target="_blank">
+                            <img src="images/spiking.png" width="300" alt="Publication 2 Image">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://arxiv.org/pdf/2003.12346" target="_blank">
+                            <strong>Convolutional Spiking Neural Networks for Spatio-temporal Feature Extraction</strong>
+                        </a>
+                        <br>
+                        <p class="paper-explanation">
+                            Ali Samadzadeh, <strong>Fatemeh Sadat Tabatabaei Far</strong>, Ali Javadi, Ahmad Nickabadi, Morteza Haghir Chehreghan
+                        <br>
+                        <em>Neural Processing Letters</em>, 2023
+                        <br>
+                        <a href="https://arxiv.org/pdf/2003.12346" target="_blank">arXiv</a>
+                        <br><br>
+                        In this paper, we explore the spatio-temporal feature extraction capabilities of convolutional spiking neural networks (SNNs).
+                            We propose a novel deep spiking architecture for neuromorphic vision and action recognition tasks, and evaluate its performance on several benchmark datasets.
+
+                    </div>
+                </li>
+
+                <!-- Third Publication -->
+                <li style="display: flex; align-items: center; margin-bottom: 20px;"> <!-- Flexbox layout -->
+                    <div style="margin-right: 20px;">
+                        <a href="https://ieeexplore.ieee.org/abstract/document/8786740" target="_blank">
+                            <img src="images/Levinson.png" width="300" alt="Publication 2 Image">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://ieeexplore.ieee.org/abstract/document/8786740" target="_blank">
+                            <strong>A Neural Network Based Levinson-Durbin Method for Adaptive Active Sensor Waveform Synthesis</strong>
+                        </a>
+                        <br>
+                        <p class="paper-explanation">
+                        Alireza Pourafzal, Pirouz Majdolashrafi, Mehrdad Ardebilipour, <strong>Fatemeh Sadat Tabatabaei Far</strong>
+                        <br>
+                        <em>ICEE</em>, 2019
+<!--                        <br>-->
+<!--                        <a href="https://arxiv.org/pdf/2003.12346" target="_blank">arXiv</a>-->
+<!--                        <br>-->
+                            <br><br>
+                        This paper presents an ANN-based Levinson-Durbin method for adaptive active sensor waveform synthesis,
+                            enhancing the probability of detection for point targets in Gaussian stationary clutter.
+                    </div>
+                </li>
+
+            </ul>
+        </section>
+
+
+    </main>
+
 <!--    <footer>-->
 <!--        <p>&copy; 2024 Fatemeh Tabatabaei</p>-->
 <!--    </footer>-->
-<!--</body>-->
-<!--</html>-->
-
-<!DOCTYPE HTML>
-<html lang="en">
-<head>
-    <!-- Google tag (gtag.js) -->
-<!--    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VDZRSTKPYC"></script>-->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-
-        gtag('config', 'G-VDZRSTKPYC');
-    </script>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <title>Fatemeh Tabatabaei</title>
-
-    <meta name="author" content="Fatemeh Tabatabaei">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<!--    <link rel="icon" type="image/png" href="images/logo_uva.png">-->
-
-</head>
-
-<body>
-<table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-    <tr style="padding:0px">
-        <td style="padding:0px">
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                <tbody>
-                <tr style="padding:0px">
-                    <!--                    <td style="padding:2.5%;width:40%;max-width:40%">-->
-                    <!--                        <a href="images/mina1.jpeg"><img style="width:100%;max-width:100%" alt="profile photo"-->
-                    <!--                                                         src="images/mina1.jpeg" class="hoverZoomLink"></a>-->
-                    <!--                    </td>-->
-                    <td style="padding:2.5%;width:63%;vertical-align:middle">
-                        <p style="text-align:center">
-                            <name>Fatemeh Tabatabaei Far</name>
-                        </p>
-<!--                        <p>I am currently doing an internship at apple, MLR team with <a href="https://scholar.google.es/citations?user=xcJGSJ4AAAAJ&hl=ca">Xavier Suau</a>.</p>-->
-                        <p>I am a Machine Learning reseacher at the <a href="https://www.auc.ac.ir/">Amirkabir University of Tehran</a>. I'm
-                            working on "Hyperbolic visual representation learning" under the supervision of <a
-                                    href="https://staff.fnwi.uva.nl/p.s.m.mettes/">Pascal Mettes</a> at <a
-                                    href="https://ivi.fnwi.uva.nl/vislab/">VisLab</a>. I recently finished my internship at Apple MLR team, working with <a href="https://scholar.google.es/citations?user=xcJGSJ4AAAAJ&hl=ca">Xavier Suau.</a>
-                        </p>
-                        <p>
-                            I completed my Master's degree in the Statistical Machine Learning Lab at the
-                            <a href="https://ce.aut.ac.ir/index.php?sid=4&slc_lang=en">Department of Computer
-                                Engineering and Information Technology</a>, <a href="https://aut.ac.ir/">Amirkabir
-                            University of Technology</a>, Tehran, Iran, in 2021. I received my B.Sc. degree from the
-                            Department of Computer Engineering, K. N. Toosi University of Technology, Tehran, Iran, in 2018.
-                        </p>
-                        <p style="text-align:center">
-                            <a href="mailto:tabatabaeifateme@gmail.com">Email</a> &nbsp/&nbsp
-                            <a href="data/CV_19October.pdf">CV</a> &nbsp/&nbsp
-                            <a href="https://scholar.google.com/citations?user=1dVVIxQAAAAJ&hl=en">Google Scholar</a>
-                            &nbsp/&nbsp
-<!--                            <a href="https://mobile.twitter.com/ghadimiatigmina">Twitter</a> &nbsp/&nbsp-->
-<!--                            <a href="https://github.com/MinaGhadimiAtigh/">Github</a> &nbsp/&nbsp-->
-                            <a href="https://www.linkedin.com/in/fatemeh-tabatabaeii">LinkedIn</a>
-                        </p>
-                    </td>
-                    <td style="padding:2.5%;width:40%;max-width:40%">
-                        <a href="images/profile_20sep.jpg"><img style="width:100%;max-width:100%" alt="profile photo"
-                                                         src="images/profile_20sep.jpg" class="hoverZoomLink"></a>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-<!--            <table style="width:100%;border:0px;border-spacing:4px;border-collapse:separate;margin-right:auto;margin-left:auto;">-->
-<!--                <tbody>-->
-<!--                <tr>-->
-<!--                    <td>-->
-<!--                        <heading>News</heading>-->
-<!--                    </td>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                    <td><strong>[June 2023]</strong></td>-->
-<!--                    <td>Joined Apple as MLR intern, working on diffusion models.</td>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                    <td><strong>[May 2022]</strong></td>-->
-<!--                    <td>"Hyperbolic Deep Learning in Computer Vision: A Survey" is available <a-->
-<!--                            href="https://arxiv.org/pdf/2305.06611.pdf"> online</a>.</td>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                    <td><strong>[Oct 2022]</strong></td>-->
-<!--                    <td>Organized a tutorial on Hyperbolic Representation Learning at ECCV 2022</td>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                    <td><strong>[Sep 2022]</strong></td>-->
-<!--                    <td>Visited Mediterranean Machine Learning Summer School, got the best poster award. <a-->
-<!--                            href="https://arxiv.org/pdf/2203.05898.pdf">[Paper]</a></td>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                    <td><strong>[July 2022]</strong></td>-->
-<!--                    <td>Visited International Computer Vision Summer School in Sicily. <a-->
-<!--                            href="https://arxiv.org/pdf/2203.05898.pdf">[Paper]</a></td>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                    <td><strong>[May 2022]</strong></td>-->
-<!--                    <td><b>Hyperbolic Image Segmentation</b> is accepted as oral presentation to NCCV2022. <a-->
-<!--                            href="https://arxiv.org/pdf/2203.05898.pdf">[Paper]</a></td>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                    <td><strong>[March 2022]</strong></td>-->
-<!--                    <td><b>Hyperbolic Image Segmentation</b> is accepted to CVPR2022. <a-->
-<!--                            href="https://arxiv.org/pdf/2203.05898.pdf">[Paper]</a></td>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                    <td><strong>[Sep 2021]</strong></td>-->
-<!--                    <td><b>Hyperbolic Busemann Learning with Ideal Prototypes</b> is accepted to NeurIPS2021. <a-->
-<!--                            href="https://proceedings.neurips.cc/paper/2021/file/01259a0cb2431834302abe2df60a1327-Paper.pdf">[Paper]</a>-->
-<!--                    </td>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                    <td><strong>[Oct 2020]</strong></td>-->
-<!--                    <td>Joined <a href="https://ivi.fnwi.uva.nl/vislab/">VisLab</a> as Ph.D. student.</td>-->
-<!--                </tr>-->
-<!--                </tbody>-->
-<!--            </table>-->
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                <tbody>
-                <tr>
-                    <td style="padding:20px;width:100%;vertical-align:middle">
-                        <heading>Research</heading>
-                        <p>
-                            I'm interested in computer vision and understanding images and videos. I'm interested in
-                            exploring
-                            images and video understanding in non-Euclidean spaces, such as hyperbolic space.
-                        </p>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                <tbody>
-
-                <!--          <tr onmouseout="mip360_stop()" onmouseover="mip360_start()"  bgcolor="#ffffd0">-->
-                <tr>
-                    <td style="padding:20px;width:40%;vertical-align:middle">
-                        <div class="one">
-                            <!--                            <div class="two" id='mip360_image'>-->
-                            <!--                                <video width=100% height=100% muted autoplay loop>-->
-                            <!--                                    <source src="images/mip360_sat.mp4" type="video/mp4">-->
-                            <!--                                    Your browser does not support the video tag.-->
-                            <!--                                </video>-->
-                            <!--                            </div>-->
-                            <a href="images/survey.jpg"><img src='images/survey.jpg' width="300"
-                                                           alt="Hyperbolic Deep Learning in Computer Vision"></a>
-                        </div>
-                        <!--                        <script type="text/javascript">-->
-                        <!--                            function mip360_start() {-->
-                        <!--                                document.getElementById('mip360_image').style.opacity = "1";-->
-                        <!--                            }-->
-
-                        <!--                            function mip360_stop() {-->
-                        <!--                                document.getElementById('mip360_image').style.opacity = "0";-->
-                        <!--                            }-->
-
-                        <!--                            mip360_stop()-->
-                        <!--                        </script>-->
-                    </td>
-                    <td style="padding:20px;width:60%;vertical-align:middle">
-                        <a href="">
-                            <papertitle>Hyperbolic Deep Learning in Computer Vision</papertitle>
-                        </a>
-                        <br>
-                        Pascal Mettes,
-                        <strong>Mina Ghadimi Atigh</strong>,
-                        Martin Keller-Ressel,
-                        Jeffrey Gu,
-                        Serena Yeung
-                        <br><br>
-                        <em>arXiv</em>, 2023
-                        <br>
-                        <!--                        <a href="papers/HBL.html" target="_self">project page</a>-->
-<!--                        <a href="papers/HIS/index.html" target="_self">project page</a>-->
-<!--                        /-->
-                        <!--                        <a href="https://proceedings.neurips.cc/paper/2021/file/01259a0cb2431834302abe2df60a1327-Paper.pdf" target="_blank">Paper</a>-->
-                        <!--                        /-->
-                        <a href="https://arxiv.org/pdf/2305.06611.pdf" target="_blank">arXiv</a>
-                        <!--                        /-->
-                        <!--                        <a href="https://youtu.be/zBSH-k9GbV4">video</a>-->
-                        <p></p>
-                        <p>In this survey, We outline how hyperbolic learning is performed in all themes and discuss the main research problems  that benefit from current advances in hyperbolic learning for computer vision.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="padding:20px;width:40%;vertical-align:middle">
-                        <div class="one">
-                            <!--                            <div class="two" id='mip360_image'>-->
-                            <!--                                <video width=100% height=100% muted autoplay loop>-->
-                            <!--                                    <source src="images/mip360_sat.mp4" type="video/mp4">-->
-                            <!--                                    Your browser does not support the video tag.-->
-                            <!--                                </video>-->
-                            <!--                            </div>-->
-                            <a href="images/HIS.jpeg"><img src='images/HIS.jpeg' width="300"
-                                                           alt="Hyperbolic Image segmentation"></a>
-                        </div>
-                        <!--                        <script type="text/javascript">-->
-                        <!--                            function mip360_start() {-->
-                        <!--                                document.getElementById('mip360_image').style.opacity = "1";-->
-                        <!--                            }-->
-
-                        <!--                            function mip360_stop() {-->
-                        <!--                                document.getElementById('mip360_image').style.opacity = "0";-->
-                        <!--                            }-->
-
-                        <!--                            mip360_stop()-->
-                        <!--                        </script>-->
-                    </td>
-                    <td style="padding:20px;width:60%;vertical-align:middle">
-                        <a href="papers/HIS/index.html">
-                            <papertitle>Hyperbolic Image Segmentation</papertitle>
-                        </a>
-                        <br>
-                        <strong>Mina Ghadimi Atigh</strong>,
-                        Julian Schoep,
-                        Erman Acar,
-                        Nanne van Noord,
-                        Pascal Mettes
-                        <br><br>
-                        <em>CVPR</em>, 2022
-                        <br>
-                        <!--                        <a href="papers/HBL.html" target="_self">project page</a>-->
-                        <a href="papers/HIS/index.html" target="_self">project page</a>
-                        /
-                        <!--                        <a href="https://proceedings.neurips.cc/paper/2021/file/01259a0cb2431834302abe2df60a1327-Paper.pdf" target="_blank">Paper</a>-->
-                        <!--                        /-->
-                        <a href="https://arxiv.org/pdf/2203.05898.pdf" target="_blank">arXiv</a>
-                        <!--                        /-->
-                        <!--                        <a href="https://youtu.be/zBSH-k9GbV4">video</a>-->
-                        <p></p>
-                        <p>Hyperbolic Image Segmentation opens up new possibilities and practical benefits for
-                            segmentation, such as uncertainty estimation and boundary information for free, zero-label
-                            generalization, and increased performance in low-dimensional output embeddings.</p>
-                    </td>
-                </tr>
-
-                <tr> <!--onmouseout="refnerf_stop()" onmouseover="refnerf_start()">-->
-                    <td style="padding:20px;width:40%;vertical-align:middle">
-                        <div class="one">
-                            <!--                            <div class="two" id='refnerf_image'>-->
-                            <!--                                <video width=100% height=100% muted autoplay loop>-->
-                            <!--                                    <source src="images/refnerf.mp4" type="video/mp4">-->
-                            <!--                                    Your browser does not support the video tag.-->
-                            <!--                                </video>-->
-                            <!--                            </div>-->
-                            <a href="images/HBL.jpeg"><img src='images/HBL.jpeg' width="300"
-                                                           alt="Hyperbolic Busemann Learning"></a>
-                        </div>
-                        <!--                        <script type="text/javascript">-->
-                        <!--                            function refnerf_start() {-->
-                        <!--                                document.getElementById('refnerf_image').style.opacity = "1";-->
-                        <!--                            }-->
-
-                        <!--                            function refnerf_stop() {-->
-                        <!--                                document.getElementById('refnerf_image').style.opacity = "0";-->
-                        <!--                            }-->
-
-                        <!--                            refnerf_stop()-->
-                        <!--                        </script>-->
-                    </td>
-                    <td style="padding:20px;width:60%;vertical-align:middle">
-                        <a href="papers/HBL/index.html">
-                            <papertitle>Hyperbolic Busemann Learning with Ideal Prototypes</papertitle>
-                        </a>
-                        <br>
-                        <strong>Mina Ghadimi Atigh</strong>,
-                        Martin Keller-Ressel,
-                        Pascal Mettes
-                        <br><br>
-                        <em>NeurIPS</em>, 2021
-                        <br>
-                        <a href="papers/HBL/index.html">project page</a>
-                        /
-                        <a href="https://proceedings.neurips.cc/paper/2021/file/01259a0cb2431834302abe2df60a1327-Paper.pdf">Paper</a>
-                        /
-                        <a href="https://arxiv.org/pdf/2106.14472.pdf" target="_blank">arXiv</a>
-                        <!--                        /-->
-                        <!--                        <a href="https://youtu.be/qrdRH9irAlk">video</a>-->
-                        <p></p>
-                        <p>Where existing works on prototype-based learning in hyperbolic space requires prior knowledge
-                            to operate, Hyperbolic Busemann Learning places prototypes at the ideal boundary of the
-                            Poincar&#96;e ball. This enables a prototype positioning without the need for prior
-                            knowledge.</p>
-                    </td>
-                </tr>
-
-                <!--                <tr onmouseout="rawnerf_stop()" onmouseover="rawnerf_start()">-->
-                <tr>
-                    <td style="padding:20px;width:40%;vertical-align:middle">
-                        <div class="one">
-                            <!--                            <div class="two" id='rawnerf_image'>-->
-                            <!--                                <video width=100% height=100% muted autoplay loop>-->
-                            <!--                                    <source src="images/rawnerf.mp4" type="video/mp4">-->
-                            <!--                                    Your browser does not support the video tag.-->
-                            <!--                                </video>-->
-                            <!--                            </div>-->
-                            <img src='images/CRM.jpg' width="300">
-                        </div>
-                        <!--                        <script type="text/javascript">-->
-                        <!--                            function rawnerf_start() {-->
-                        <!--                                document.getElementById('rawnerf_image').style.opacity = "1";-->
-                        <!--                            }-->
-
-                        <!--                            function rawnerf_stop() {-->
-                        <!--                                document.getElementById('rawnerf_image').style.opacity = "0";-->
-                        <!--                            }-->
-
-                        <!--                            rawnerf_stop()-->
-                        <!--                        </script>-->
-                    </td>
-                    <td style="padding:20px;width:60%;vertical-align:middle">
-                        <!--                        <a href="https://arxiv.org/pdf/1904.03308.pdf">-->
-                        <a href="papers/CRM/index.html">
-                            <papertitle>Convolutional Relational Machine for Group Activity Recognition</papertitle>
-                        </a>
-                        <br>
-                        Sina Mokhtarzadeh Azar,
-                        <strong>Mina Ghadimi Atigh</strong>,
-                        Ahmad Nickabadi,
-                        Alexandre Alahi
-                        <br><br>
-                        <em>CVPR</em>, 2019
-                        <br>
-                        <a href="papers/CRM/index.html">project page</a>
-                        /
-                        <a href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Azar_Convolutional_Relational_Machine_for_Group_Activity_Recognition_CVPR_2019_paper.pdf">Paper</a>
-                        /
-                        <a href="https://arxiv.org/pdf/1904.03308.pdf" target="_blank">arXiv</a>
-                        <!--                        /-->
-                        <!--                        <a href="https://www.youtube.com/watch?v=JtBS4KBcKVc">video</a>-->
-                        <p></p>
-                        <p>
-                            We propose a Convolutional Relational Machine for group activity recognition by extracting
-                            the relationships between persons. We show that the activity map is a useful representation
-                            that effectively encodes the spatial relations.</p>
-                    </td>
-                </tr>
-
-
-                <tr>
-                    <td style="padding:20px;width:40%;vertical-align:middle">
-                        <div class="one">
-                            <!--                            <div class="two" id='urf_image'>-->
-                            <!--                                <video width=100% height=100% muted autoplay loop>-->
-                            <!--                                    <source src="images/urf.mp4" type="video/mp4">-->
-                            <!--                                    Your browser does not support the video tag.-->
-                            <!--                                </video>-->
-                            <!--                            </div>-->
-                            <img src='images/multi.jpg' width="300">
-                        </div>
-                        <!--                        <script type="text/javascript">-->
-                        <!--                            function urf_start() {-->
-                        <!--                                document.getElementById('urf_image').style.opacity = "1";-->
-                        <!--                            }-->
-
-                        <!--                            function urf_stop() {-->
-                        <!--                                document.getElementById('urf_image').style.opacity = "0";-->
-                        <!--                            }-->
-
-                        <!--                            urf_stop()-->
-                        <!--                        </script>-->
-                    </td>
-                    <td style="padding:20px;width:60%;vertical-align:middle">
-                        <a href="https://arxiv.org/pdf/1812.10328.pdf" target="_blank">
-                            <papertitle>A Multi-Stream Convolutional Neural Network Framework for Group Activity
-                                Recognition
-                            </papertitle>
-                        </a>
-                        <br>
-                        Sina Mokhtarzadeh Azar,
-                        <strong>Mina Ghadimi Atigh</strong>, <br>
-                        Ahmad Nickabadi
-                        <br>
-                        <em>arXiv</em>, 2018
-                        <br>
-                        <!--                        <a href="https://urban-radiance-fields.github.io/">project page</a>-->
-                        <!--                        /-->
-                        <a href="https://arxiv.org/pdf/1812.10328.pdf">arXiv</a>
-                        <!--                        /-->
-                        <!--                        <a href="https://www.youtube.com/watch?v=qGlq5DZT6uc">video</a>-->
-                        <p></p>
-                        <p>
-                            In this paper, we presented multi-stream convolutional networks as a framework for group
-                            activity recognition. In this framework, new modalities both in spatial and temporal domains
-                            can be easily plugged in to improve the model’s power.</p>
-                    </td>
-                </tr>
-
-
-                <!--                <tr onmouseout="ddp_stop()" onmouseover="ddp_start()">-->
-                <tr>
-                    <td style="padding:20px;width:40%;vertical-align:middle">
-                        <div class="one">
-                            <!--                            <div class="two" id='ddp_image'>-->
-                            <!--                                <img src='images/ddp_after.jpg' width="160"></div>-->
-                            <img src='images/zoom.jpg' width="230">
-                        </div>
-                        <!--                        <script type="text/javascript">-->
-                        <!--                            function ddp_start() {-->
-                        <!--                                document.getElementById('ddp_image').style.opacity = "1";-->
-                        <!--                            }-->
-
-                        <!--                            function ddp_stop() {-->
-                        <!--                                document.getElementById('ddp_image').style.opacity = "0";-->
-                        <!--                            }-->
-
-                        <!--                            ddp_stop()-->
-                        <!--                        </script>-->
-                    </td>
-                    <td style="padding:20px;width:40%;vertical-align:middle">
-                        <a href="https://arxiv.org/pdf/1809.09189.pdf" target="_blank">
-                            <papertitle>Zoom-RNN: A Novel Method for Person Recognition Using Recurrent Neural
-                                Networks
-                            </papertitle>
-                        </a>
-                        <br>
-                        Sina Mokhtarzadeh Azar,
-                        Sajjad Azami
-                        <strong>Mina Ghadimi Atigh</strong>,
-                        Mohammad Javadi,
-                        Ahmad Nickabadi
-                        <br>
-                        <em>Arxiv</em>, 2018
-                        <br>
-                        <a href="https://arxiv.org/pdf/1809.09189.pdf">arXiv</a>
-                        <!--                        /-->
-                        <!--                        <a href="https://www.youtube.com/watch?v=zzkvvdcvksc">video</a>-->
-                        <p></p>
-                        <p>
-                            In this paper, we proposed a novel method for combining cues of different body regions for
-                            the task of person recognition in photo album. Our approach uses two distinct recurrent
-                            neural networks to extract information present in different parts of a human photo in order
-                            to improve recognition performance.
-                        </p>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-
-            <table style="width:100%;border:0px;border-spacing:4px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                <tbody>
-                <tr>
-                    <td>
-                        <heading>Teaching Assistance</heading>
-                    </td>
-                </tr>
-                                <tr>
-                    <td><strong>[September 2023]</strong></td>
-                    <td>Applied Machine Learning</td>
-                </tr>
-                                <tr>
-                    <td><strong>[September 2022]</strong></td>
-                    <td>Applied Machine Learning</td>
-                </tr>
-                <tr>
-                    <td><strong>[September 2021]</strong></td>
-                    <td>Applied Machine Learning</td>
-                </tr>
-                <tr>
-                    <td><strong>[September 2020]</strong></td>
-                    <td>Applied Machine Learning</td>
-                </tr>
-                </tbody>
-            </table>
-
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                <tbody>
-                <tr>
-                    <td style="padding:0px">
-                        <br>
-                        <p style="text-align:right;font-size:small;">
-                            Thanks <a href="https://jonbarron.info/" target="_blank">Jon</a> for the template!
-                        </p>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-        </td>
-    </tr>
-</table>
 </body>
-
 </html>
